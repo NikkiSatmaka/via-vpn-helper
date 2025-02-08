@@ -19,7 +19,7 @@ VIA_CLI="/usr/bin/via-cli"
 
 # Start a new VIA session
 echo "Starting VIA session..."
-if ! $VIA_CLI session start; then
+if ! $VIA_CLI session start --force; then
   echo "Failed to start VIA session. Exiting."
   exit 1
 fi
